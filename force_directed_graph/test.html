@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>Test Force directed graph</title>
+		<link rel='stylesheet' type='text/css' href='style.css' />
+		<script src='force.js'></script>
+		<script src='Physics.js'></script>
+		<script src='Vector.js'></script>
+	</head>
+
+	<body>
+		<div id='main'></div>
+		<script>
+			var ag = new AnimatedGraph();
+			document.body.appendChild(ag.createCanvas('view1'));
+			ag.addEdge(1,2);
+			ag.addEdge(1,3);
+			ag.addEdge(1,5);
+			ag.addEdge(3,5);
+			ag.addEdge(4,5);
+			ag.addEdge(4,6);
+			ag.addEdge(4,7);
+			ag.addEdge(4,8);
+			ag.addEdge(4,9);
+			ag.addEdge(5,8);
+			ag.addEdge(5,10);
+			ag.addEdge(6,9);
+			ag.addEdge(7,11);
+		</script>
+	</body>
+</html>
